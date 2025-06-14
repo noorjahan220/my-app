@@ -1,0 +1,75 @@
+[
+  
+  {
+    "id": 1,
+    "title": "The Science of Effective Learning",
+    "author": "Barbara Oakley",
+    "date": "2025-06-01",
+    "category": "Learning Science",
+    "image": "https://i.ibb.co/99ZsX6kL/book-4126483-1280.jpg",
+    "content": "Understand how your brain actually learns and how you can use techniques like spaced repetition, chunking, and interleaving to remember better and longer.",
+    "tags": ["learning", "memory", "study techniques"]
+  },
+  {
+    "id": 2,
+    "title": "How to Build a Daily Learning Habit",
+    "author": "James Clear",
+    "date": "2025-06-05",
+    "category": "Habits",
+    "image": "https://i.ibb.co/MDnnKjWL/stopwatch-3699317-1280.jpg",
+    "content": "Learning isn’t about intensity, it's about consistency. Here’s how to build a habit of daily learning using identity-based behavior and the 2-minute rule.",
+    "tags": ["habits", "productivity", "learning"]
+  },
+  {
+    "id": 3,
+    "title": "Deep Work: Learn Without Distraction",
+    "author": "Cal Newport",
+    "date": "2025-05-29",
+    "category": "Focus",
+    "image": "https://i.ibb.co/hxBWDpmx/darts-8905121-1280.jpg",
+    "content": "Distraction is the enemy of depth. This article breaks down how to enter deep work mode and learn more effectively in a world of endless notifications.",
+    "tags": ["focus", "deep work", "learning"]
+  },
+  {
+    "id": 4,
+    "title": "AI-Powered Learning: The Future of Personalized Education",
+    "author": "Andrew Ng",
+    "date": "2025-06-10",
+    "category": "AI in Education",
+    "image": "https://i.ibb.co/RT5mqYgL/ai-7977960-1280.jpg",
+    "content": "Discover how AI algorithms are enabling adaptive learning platforms that tailor content to individual student needs, improving engagement and outcomes.",
+    "tags": ["AI", "personalized learning", "education technology"]
+  },
+  {
+    "id": 5,
+    "title": "10 Healthy Habits to Improve Your Mental Wellbeing",
+    "author": "Dr. Sarah Johnson",
+    "date": "2025-06-13",
+    "category": "Health & Wellness",
+    "image": "https://i.ibb.co/GfRgXLLx/bath-oil-2510783-1280.jpg",
+    "content": "Discover simple daily habits that can boost your mental health and overall happiness.",
+    "tags": ["mental health", "wellness", "self care"]
+  },
+  {
+    "id": 6,
+    "title": "Top 5 Travel Destinations for Adventure Seekers in 2025",
+    "author": "Jessica Lee",
+    "date": "2025-06-10",
+    "category": "Travel",
+    "image": "https://i.ibb.co/fVgQ8WnN/frog-897420-1280.jpg",
+    "content": "Explore thrilling places around the world that offer unforgettable adventures.",
+    "tags": ["travel", "adventure", "destinations"]
+  },
+  
+    {
+    "id": 7,
+    "title": "The Ultimate Guide to Starting Your Own Garden",
+    "author": "Michael Green",
+    "date": "2025-06-11",
+    "category": "Lifestyle",
+    "image": "https://i.ibb.co/SDgBL7y5/hydrangea-5076212-1280.jpg",
+    "content": "Step-by-step tips for growing a beautiful and productive home garden.",
+    "tags": ["gardening", "lifestyle", "home"]
+  }
+  
+]
