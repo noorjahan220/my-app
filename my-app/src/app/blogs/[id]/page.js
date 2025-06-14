@@ -80,15 +80,6 @@ export default function BlogDetail() {
           </span>
         </div>
 
-        {blog.image && (
-          // For optimization, you can replace with next/image if you want
-          <img
-            src={blog.image}
-            alt={blog.title}
-            className="w-full h-96 object-cover rounded-lg mb-8"
-          />
-        )}
-
         <div className="prose max-w-none">
           <p className="whitespace-pre-wrap">{blog.content}</p>
         </div>

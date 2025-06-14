@@ -55,13 +55,6 @@ export default function LatestBlogs() {
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {blogs.map((blog) => (
           <div key={blog._id} className="bg-white rounded-lg shadow-md overflow-hidden">
-            {blog.image && (
-              <img
-                src={blog.image}
-                alt={blog.title}
-                className="w-full h-48 object-cover"
-              />
-            )}
             <div className="p-4">
               <h3 className="text-xl font-semibold mb-2 text-gray-800">{blog.title}</h3>
               <p className="text-gray-600 mb-4 line-clamp-3">{blog.content}</p>

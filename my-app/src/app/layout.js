@@ -6,8 +6,8 @@ import NavBar from './components/NavBar';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
-  title: 'Blog Platform',
-  description: 'A modern blog platform built with Next.js',
+  title: 'The Grid Post',
+  description: 'A modern blog platform built with Next.js featuring a clean design and dynamic content.',
 };
 
 export const viewport = {

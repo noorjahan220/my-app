@@ -10,12 +10,12 @@ export default function NavBar() {
 
   return (
     <nav>
-      <header className="bg-white">
+      <header className="bg-[var(--background-light)] dark:bg-[var(--background-dark)] shadow-md">
         <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
           <div className="flex h-16 items-center justify-between">
             <div className="md:flex md:items-center md:gap-12">
-              <Link className="block text-teal-600 font-bold text-xl" href="/">
-                MyApp
+              <Link className="block text-[var(--accent-color-light)] dark:text-[var(--accent-color-dark)] font-bold text-xl" href="/">
+                The Grid Post
               </Link>
             </div>
 
@@ -25,7 +25,7 @@ export default function NavBar() {
                   <li>
                     <Link
                       href="/"
-                      className="rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white shadow-sm"
+                      className="rounded-md bg-[var(--primary-button-bg-light)] text-[var(--primary-button-text-light)] px-5 py-2.5 text-sm font-medium shadow-sm hover:opacity-90 dark:bg-[var(--primary-button-bg-dark)] dark:text-[var(--primary-button-text-dark)]"
                     >
                       Home
                     </Link>
@@ -34,7 +34,7 @@ export default function NavBar() {
                   <li>
                     <Link
                       href="/blogs"
-                      className="text-gray-500 transition hover:text-gray-500/75"
+                      className="text-[var(--foreground-light)] transition hover:text-[var(--accent-color-light)]/75 dark:text-[var(--foreground-dark)] dark:hover:text-[var(--accent-color-dark)]/75"
                     >
                       Blogs
                     </Link>
@@ -44,7 +44,7 @@ export default function NavBar() {
                     <li>
                       <Link
                         href="/blogs/add"
-                        className="rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white shadow-sm"
+                        className="rounded-md bg-[var(--primary-button-bg-light)] text-[var(--primary-button-text-light)] px-5 py-2.5 text-sm font-medium shadow-sm hover:opacity-90 dark:bg-[var(--primary-button-bg-dark)] dark:text-[var(--primary-button-text-dark)]"
                       >
                         Add Blog
                       </Link>
@@ -57,15 +57,15 @@ export default function NavBar() {
             <div className="flex items-center gap-4">
               <div className="sm:flex sm:gap-4">
                 {status === 'loading' ? (
-                  <span className="text-gray-500">Loading...</span>
+                  <span className="text-[var(--foreground-light)] dark:text-[var(--foreground-dark)]">Loading...</span>
                 ) : session?.user ? (
                   <>
-                    <span className="text-gray-700 mt-2 font-medium">
+                    <span className="text-[var(--foreground-light)] dark:text-[var(--foreground-dark)] mt-2 font-medium">
                       {session.user.name || session.user.email}
                     </span>
                     <button
                       onClick={() => signOut({ callbackUrl: '/' })}
-                      className="rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white shadow-sm hover:bg-teal-700"
+                      className="rounded-md bg-[var(--primary-button-bg-light)] text-[var(--primary-button-text-light)] px-5 py-2.5 text-sm font-medium shadow-sm hover:opacity-90 dark:bg-[var(--primary-button-bg-dark)] dark:text-[var(--primary-button-text-dark)]"
                     >
                       Logout
                     </button>
@@ -74,13 +74,13 @@ export default function NavBar() {
                   <>
                     <Link
                       href="/login"
-                      className="rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white shadow-sm hover:bg-teal-700"
+                      className="rounded-md bg-[var(--primary-button-bg-light)] text-[var(--primary-button-text-light)] px-5 py-2.5 text-sm font-medium shadow-sm hover:opacity-90 dark:bg-[var(--primary-button-bg-dark)] dark:text-[var(--primary-button-text-dark)]"
                     >
                       Login
                     </Link>
                     <Link
                       href="/register"
-                      className="rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white shadow-sm hover:bg-blue-700"
+                      className="rounded-md bg-[var(--primary-button-bg-light)] text-[var(--primary-button-text-light)] px-5 py-2.5 text-sm font-medium shadow-sm hover:opacity-90 dark:bg-[var(--primary-button-bg-dark)] dark:text-[var(--primary-button-text-dark)]"
                     >
                       Register
                     </Link>
@@ -93,7 +93,7 @@ export default function NavBar() {
                   onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                   aria-expanded={isMobileMenuOpen}
                   aria-controls="mobile-menu"
-                  className="rounded-sm bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75"
+                  className="rounded-sm bg-[var(--background-light)] dark:bg-[var(--background-dark)] p-2 text-[var(--foreground-light)] transition hover:opacity-90 dark:text-[var(--foreground-dark)]"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -118,13 +118,13 @@ export default function NavBar() {
           {isMobileMenuOpen && (
             <nav
               id="mobile-menu"
-              className="md:hidden mt-2 bg-white rounded-md shadow-md p-4"
+              className="md:hidden mt-2 bg-[var(--background-light)] dark:bg-[var(--background-dark)] rounded-md shadow-md p-4"
             >
               <ul className="flex flex-col gap-4 text-sm">
                 <li>
                   <Link
                     href="/"
-                    className="block rounded-md bg-teal-600 px-5 py-2.5 text-white font-medium shadow-sm"
+                    className="block rounded-md bg-[var(--primary-button-bg-light)] text-[var(--primary-button-text-light)] px-5 py-2.5 text-white font-medium shadow-sm hover:opacity-90 dark:bg-[var(--primary-button-bg-dark)] dark:text-[var(--primary-button-text-dark)]"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     Home
@@ -133,7 +133,7 @@ export default function NavBar() {
                 <li>
                   <Link
                     href="/blogs"
-                    className="block text-gray-700 hover:text-teal-600"
+                    className="block text-[var(--foreground-light)] hover:text-[var(--accent-color-light)] dark:text-[var(--foreground-dark)] dark:hover:text-[var(--accent-color-dark)]"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     Blogs
@@ -143,7 +143,7 @@ export default function NavBar() {
                   <li>
                     <Link
                       href="/blogs/add"
-                      className="block rounded-md bg-teal-600 px-5 py-2.5 text-white font-medium shadow-sm"
+                      className="block rounded-md bg-[var(--primary-button-bg-light)] text-[var(--primary-button-text-light)] px-5 py-2.5 text-white font-medium shadow-sm hover:opacity-90 dark:bg-[var(--primary-button-bg-dark)] dark:text-[var(--primary-button-text-dark)]"
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
                       Add Blog
@@ -157,7 +157,7 @@ export default function NavBar() {
                         signOut({ callbackUrl: '/' });
                         setIsMobileMenuOpen(false);
                       }}
-                      className="w-full rounded-md bg-teal-600 px-5 py-2.5 text-white font-medium shadow-sm hover:bg-teal-700"
+                      className="w-full rounded-md bg-[var(--primary-button-bg-light)] text-[var(--primary-button-text-light)] px-5 py-2.5 text-white font-medium shadow-sm hover:opacity-90 dark:bg-[var(--primary-button-bg-dark)] dark:text-[var(--primary-button-text-dark)]"
                     >
                       Logout
                     </button>
@@ -167,7 +167,7 @@ export default function NavBar() {
                     <li>
                       <Link
                         href="/login"
-                        className="block rounded-md bg-teal-600 px-5 py-2.5 text-white font-medium shadow-sm hover:bg-teal-700"
+                        className="block rounded-md bg-[var(--primary-button-bg-light)] text-[var(--primary-button-text-light)] px-5 py-2.5 text-white font-medium shadow-sm hover:opacity-90 dark:bg-[var(--primary-button-bg-dark)] dark:text-[var(--primary-button-text-dark)]"
                         onClick={() => setIsMobileMenuOpen(false)}
                       >
                         Login
@@ -176,7 +176,7 @@ export default function NavBar() {
                     <li>
                       <Link
                         href="/register"
-                        className="block rounded-md bg-teal-600 px-5 py-2.5 text-white font-medium shadow-sm hover:bg-blue-700"
+                        className="block rounded-md bg-[var(--primary-button-bg-light)] text-[var(--primary-button-text-light)] px-5 py-2.5 text-white font-medium shadow-sm hover:opacity-90 dark:bg-[var(--primary-button-bg-dark)] dark:text-[var(--primary-button-text-dark)]"
                         onClick={() => setIsMobileMenuOpen(false)}
                       >
                         Register

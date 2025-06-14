@@ -10,19 +10,72 @@
 @import 'swiper/css/autoplay';
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background-light: #f5f5f5; /* Soft light background */
+  --foreground-light: #333333; /* Darker text for readability */
+  --accent-color-light: #007bff; /* Vibrant blue accent */
+  --primary-button-bg-light: #007bff;
+  --primary-button-text-light: #ffffff;
+  --link-color-light: #007bff;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background-dark: #1a1a1a; /* Dark background */
+    --foreground-dark: #e0e0e0; /* Lighter text for dark mode */
+    --accent-color-dark: #66ccff; /* Brighter blue accent */
+    --primary-button-bg-dark: #66ccff;
+    --primary-button-text-dark: #1a1a1a;
+    --link-color-dark: #66ccff;
   }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--background-light);
+  color: var(--foreground-light);
+  font-family: 'Inter', sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: var(--background-dark);
+    color: var(--foreground-dark);
+  }
+}
+
+/* Base styles for modern art aesthetic */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 0.5em;
+}
+
+a {
+  text-decoration: none;
+  color: var(--link-color-light);
+  transition: color 0.3s ease;
+}
+
+@media (prefers-color-scheme: dark) {
+  a {
+    color: var(--link-color-dark);
+  }
+}
+
+a:hover {
+  text-decoration: underline;
+  opacity: 0.8;
+}
+
+button {
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+  opacity: 0.9;
 }

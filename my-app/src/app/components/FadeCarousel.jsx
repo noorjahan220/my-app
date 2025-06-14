@@ -32,11 +32,7 @@ export default function App() {
         {/* Slide 1 */}
         <SwiperSlide>
           <div className="relative w-full h-[600px] rounded-3xl overflow-hidden">
-            <img
-              src="/bannerImages/binary-code-7190628_1280.jpg"
-              className="w-full h-full object-cover"
-              alt="Binary Code"
-            />
+            {/* Image removed */}
             <div className="absolute inset-0 flex items-center justify-center bg-black/60 text-white text-center px-4">
               <div>
                 <h2 className="text-4xl font-bold mb-2">Empowering the Digital Era</h2>
@@ -49,11 +45,7 @@ export default function App() {
         {/* Slide 2 */}
         <SwiperSlide>
           <div className="relative w-full h-[600px] rounded-3xl overflow-hidden">
-            <img
-              src="/bannerImages/artificial-intelligence-2167835_1280.jpg"
-              className="w-full h-full object-cover"
-              alt="AI"
-            />
+            {/* Image removed */}
             <div className="absolute inset-0 flex items-center justify-center bg-black/60 font-bold text-center px-4">
               <div>
                 <h2 className="text-4xl text-[#F2F9FF] font-bold mb-2">AI Shaping Tomorrow</h2>
@@ -66,11 +58,7 @@ export default function App() {
         {/* Slide 3 */}
         <SwiperSlide>
           <div className="relative w-full h-[600px] rounded-3xl overflow-hidden">
-            <img
-              src="/bannerImages/network-6511448_1280.jpg"
-              className="w-full h-full object-cover"
-              alt="Network"
-            />
+            {/* Image removed */}
             <div className="absolute inset-0 flex items-center justify-center bg-black/60 text-white text-center px-4">
               <div>
                 <h2 className="text-4xl font-bold mb-2">Global Connectivity</h2>
@@ -83,11 +71,7 @@ export default function App() {
         {/* Slide 4 */}
         <SwiperSlide>
           <div className="relative w-full h-[600px] rounded-3xl overflow-hidden">
-            <img
-              src="/bannerImages/to-learn-2001838_1280.jpg"
-              className="w-full h-full object-cover"
-              alt="Learning"
-            />
+            {/* Image removed */}
             <div className="absolute inset-0 flex items-center justify-center bg-black/60 text-white text-center px-4">
               <div>
                 <h2 className="text-4xl font-bold mb-2">Lifelong Learning</h2>
@@ -100,11 +84,7 @@ export default function App() {
         {/* Slide 5 */}
         <SwiperSlide>
           <div className="relative w-full h-[600px] rounded-3xl overflow-hidden">
-            <img
-              src="/bannerImages/woman-3597095_1280.jpg"
-              className="w-full h-full object-cover"
-              alt="Woman Developer"
-            />
+            {/* Image removed */}
             <div className="absolute inset-0 flex items-center justify-center bg-black/60 text-white text-center px-4">
               <div>
                 <h2 className="text-4xl font-bold mb-2">Women in Tech</h2>

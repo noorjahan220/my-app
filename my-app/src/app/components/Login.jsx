@@ -62,9 +62,9 @@ export default function Login() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100 px-4">
-      <div className="max-w-md w-full bg-white p-8 rounded-xl shadow-lg">
-        <h2 className="text-2xl font-semibold mb-6 text-center text-gray-800">
+    <div className="min-h-screen flex items-center justify-center bg-[var(--background-light)] dark:bg-[var(--background-dark)] px-4">
+      <div className="max-w-md w-full bg-[var(--background-light)] dark:bg-[var(--background-dark)] p-8 rounded-xl shadow-lg">
+        <h2 className="text-2xl font-semibold mb-6 text-center text-[var(--foreground-light)] dark:text-[var(--foreground-dark)]">
           Login Here!
         </h2>
 
@@ -72,7 +72,7 @@ export default function Login() {
           <div>
             <label
               htmlFor="email"
-              className="block text-sm font-medium text-gray-700"
+              className="block text-sm font-medium text-[var(--foreground-light)] dark:text-[var(--foreground-dark)]"
             >
               Email
             </label>
@@ -81,7 +81,7 @@ export default function Login() {
               id="email"
               name="email"
               required
-              className="mt-1 w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-teal-500 focus:border-teal-500"
+              className="mt-1 w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-[var(--accent-color-light)] focus:border-[var(--accent-color-light)] dark:focus:ring-[var(--accent-color-dark)] dark:focus:border-[var(--accent-color-dark)] text-[var(--foreground-light)] dark:text-[var(--foreground-dark)] bg-[var(--background-light)] dark:bg-[var(--background-dark)]"
               placeholder="you@example.com"
               disabled={loading}
             />
@@ -90,7 +90,7 @@ export default function Login() {
           <div>
             <label
               htmlFor="password"
-              className="block text-sm font-medium text-gray-700"
+              className="block text-sm font-medium text-[var(--foreground-light)] dark:text-[var(--foreground-dark)]"
             >
               Password
             </label>
@@ -99,7 +99,7 @@ export default function Login() {
               id="password"
               name="password"
               required
-              className="mt-1 w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-teal-500 focus:border-teal-500"
+              className="mt-1 w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-[var(--accent-color-light)] focus:border-[var(--accent-color-light)] dark:focus:ring-[var(--accent-color-dark)] dark:focus:border-[var(--accent-color-dark)] text-[var(--foreground-light)] dark:text-[var(--foreground-dark)] bg-[var(--background-light)] dark:bg-[var(--background-dark)]"
               placeholder="••••••••"
               disabled={loading}
             />
@@ -108,11 +108,7 @@ export default function Login() {
           <button
             type="submit"
             disabled={loading}
-            className={`w-full py-2 px-4 rounded-md transition ${
-              loading
-                ? "bg-teal-400 cursor-not-allowed"
-                : "bg-teal-600 hover:bg-teal-700"
-            } text-white`}
+            className={`w-full py-2 px-4 rounded-md transition ${loading ? "bg-gray-400 cursor-not-allowed" : "bg-[var(--primary-button-bg-light)] hover:opacity-90 dark:bg-[var(--primary-button-bg-dark)] dark:hover:opacity-90"} text-[var(--primary-button-text-light)] dark:text-[var(--primary-button-text-dark)]`}
           >
             {loading ? "Logging in..." : "Login"}
           </button>

@@ -48,13 +48,6 @@ export default function BlogsPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {blogs.map((blog) => (
             <div key={blog.id} className="bg-white p-6 rounded-lg shadow">
-              {blog.image && (
-                <img
-                  src={blog.image}
-                  alt={blog.title}
-                  className="w-full h-48 object-cover rounded-lg mb-4"
-                />
-              )}
               <h3 className="text-xl font-semibold mb-2">{blog.title}</h3>
               <p className="text-gray-600 mb-4">{blog.content.substring(0, 150)}...</p>
               <div className="flex justify-between items-center">
